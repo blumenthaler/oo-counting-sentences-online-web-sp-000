@@ -31,7 +31,8 @@ class String
 
 # 1. split string on any/all periods, question marks, exclamation marks
 # 2. count number of elements from split
-# 3. 
+# 3. edge cases/repeated punctuation
+  # how to eliminate empty strings from an array? (.strip or .chomp)
 
   def count_sentences
 
