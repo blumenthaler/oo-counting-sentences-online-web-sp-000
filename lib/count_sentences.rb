@@ -35,8 +35,11 @@ class String
   # how to eliminate empty strings from an array? (.strip or .chomp)
 
   def count_sentences
-    array = self.split(".", "!", "?")
-    sentences = array.strip.length
+    array = []
+    self.split(".", "!", "?") do |string|
+      array << string.strip
+    end
+    sentences = array.length
+    sentences
   end
-  sentences
 end
