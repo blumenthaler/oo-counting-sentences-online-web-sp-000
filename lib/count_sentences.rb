@@ -28,6 +28,11 @@ class String
     end
   end
 
+
+# 1. split string on any/all periods, question marks, exclamation marks
+# 2. count number of elements from split
+# 3. 
+
   def count_sentences
 
   end
