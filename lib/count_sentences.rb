@@ -37,7 +37,7 @@ class String
   def count_sentences
     array = []
     self.split(".", "!", "?") do |string|
-      array << string.strip
+      array << string.chomp
     end
     sentences = array.length
     sentences
