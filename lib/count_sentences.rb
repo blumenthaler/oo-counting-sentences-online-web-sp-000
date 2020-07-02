@@ -35,12 +35,6 @@ class String
   # how to eliminate empty strings from an array? (.strip or .chomp)
 
   def count_sentences
-    i = 0
-    self.split(".", "!", "?") do |string|
-      array << string.chomp
-    end
-    
-    sentences = array.length
-    sentences
+    self.split(/[.!?]/).reject {|x| x.empty?}.size
   end
 end
